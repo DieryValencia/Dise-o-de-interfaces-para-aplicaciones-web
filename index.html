@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- 
+    - Viewport para diseño responsive en dispositivos móviles
+    - Título de la página
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Interfaces para Aplicaciones Web - UCC</title>
+    <!-- Tailwind CSS CDN - Framework de estilos utilitarios -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración personalizada de Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // Paleta de colores personalizada para el proyecto
+                        primary: '#4F46E5',      // Indigo principal
+                        secondary: '#818CF8',    // Indigo claro
+                        accent: '#C7D2FE',       // Azul muy claro
+                        dark: '#1E1B4B',          // Azul oscuro para textos
+                        light: '#FAF5E9',         // Fondo muy claro
+                    },
+                    fontFamily: {
+                        // Fuente sans-serif limpia y moderna
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Fuente Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos adicionales personalizados */
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        /* Animación suave para elementos interactivos */
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<!-- 
+=========================================
+CUERPO PRINCIPAL
+=========================================
+- Fondo con gradiente suave
+- Color de texto oscuro para buena lectura
+-->
+<body class="bg-gradient-to-br from-light via-white to-accent min-h-screen text-dark">
+    
+    <!-- 
+    ========================================
+    SECCIÓN 1: PORTADA
+    ========================================
+    Esta sección contiene:
+    - Título principal del proyecto
+    - Nombres de los estudiantes
+    - Información académica (materia, universidad, año)
+    - Diseño centrado y moderno con colores suaves
+    -->
+    <section class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
+        <!-- Contenedor principal de la portada -->
+        <div class="max-w-4xl w-full text-center space-y-8">
+            
+            <!-- Título principal -->
+            <!-- Tamaño grande para impactar visualmente -->
+            <h1 class="text-4xl md:text-6xl font-extrabold text-dark leading-tight">
+                Diseño de Interfaces para 
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                    Aplicaciones Web
+                </span>
+            </h1>
+            
+            <!-- Subtítulo informativo -->
+            <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+                Explorando los fundamentos del diseño UI/UX para crear experiencias digitales memorables
+            </p>
+            
+            <!-- Línea decorativa -->
+            <div class="flex items-center justify-center gap-4">
+                <div class="h-1 w-16 bg-primary rounded"></div>
+                <div class="h-3 w-3 bg-primary rounded-full"></div>
+                <div class="h-1 w-16 bg-primary rounded"></div>
+            </div>
+            
+            <!-- 
+            ========================================
+            INFORMACIÓN ACADÉMICA
+            ========================================
+            Tarjeta con los datos de los estudiantes y la materia
+            -->
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 max-w-2xl mx-auto mt-8">
+                
+                <div class="mb-6">
+                    <h2 class="text-sm uppercase tracking-wider text-gray-500 font-semibold mb-3">
+                        👥 Integrantes del Proyecto
+                    </h2>
+                    <div class="flex flex-wrap justify-center gap-3 text-gray-700">
+                        <span class="bg-accent/50 px-4 py-2 rounded-lg font-medium">Juliana Rodriguez</span>
+                        <span class="bg-accent/50 px-4 py-2 rounded-lg font-medium">Oskar Ortiz</span>
+                        <span class="bg-accent/50 px-4 py-2 rounded-lg font-medium">Felipe Rodriguez</span>
+                        <span class="bg-accent/50 px-4 py-2 rounded-lg font-medium">Diery Valencia</span>
+                    </div>
+                </div>
+                
+                <!-- Información de la materia -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 border-t border-gray-200">
+                    <!-- Materia -->
+                    <div class="text-center">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-1">Materia</p>
+                        <p class="font-semibold text-dark">Diseño de interfaces</p>
+                    </div>
+                    <!-- Universidad -->
+                    <div class="text-center">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-1">Universidad</p>
+                        <p class="font-semibold text-dark">UCC</p>
+                    </div>
+                    <!-- Año -->
+                    <div class="text-center">
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-1">Año</p>
+                        <p class="font-semibold text-dark">2026</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Indicador visual para ir a la siguiente sección -->
+            <div class="mt-12 animate-bounce">
+                <span class="text-3xl">👇</span>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- 
+    ========================================
+    SECCIÓN 2: ¿Qué es el diseño de interfaces?
+    ========================================
+    
+    -->
+
+    <section class="min-h-screen py-20 px-4 bg-white/50">
+        <div class="max-w-6xl mx-auto">
+            
+            <!-- Encabezado de la sección -->
+            <div class="text-center mb-16">
+                <!-- Badge decorativo -->
+                <span class="inline-block bg-secondary/20 text-primary px-4 py-1 rounded-full text-sm font-medium mb-4">
+                    📚 Fundamentos
+                </span>
+                
+                <!-- Título principal de la sección -->
+                <h2 class="text-3xl md:text-5xl font-bold text-dark mb-6">
+                    ¿Qué es el diseño de interfaces?
+                </h2>
+                
+                <!-- Párrafo explicativo -->
+                <!-- Explica de forma clara y concisa el concepto -->
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    El <strong>diseño de interfaces</strong> es la disciplina que se encarga de crear 
+                    la parte visual y interactiva de las aplicaciones web. Combina principios de 
+                    <strong>diseño gráfico</strong>, <strong>psicología</strong> y <strong>tecnología</strong> 
+                    para lograr que los usuarios puedan interactuar con los sistemas digitales de manera 
+                    intuitiva, eficiente y agradable. Un buen diseño de interfaces no solo se ve bien, 
+                    sino que también facilita la vida del usuario.
+                </p>
+            </div>
+
+            <!-- 
+            ========================================
+            TARJETAS DE CONCEPTOS CLAVE
+            ========================================
+            Grid layout responsive:
+            - 1 columna en móvil
+            - 3 columnas en pantallas medianas y grandes
+            Cada tarjeta contiene:
+            - Icono/emoji representativo
+            - Título del concepto
+            - Descripción breve
+            -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- 
+                ========================================
+                TARJETA 1: USABILIDAD
+                ========================================
+                Concepto: Facilidad de uso de la interfaz
+                -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <!-- Icono representativo -->
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🎯</span>
+                    </div>
+                    
+                    <!-- Título -->
+                    <h3 class="text-xl font-bold text-dark mb-4">
+                        Usabilidad
+                    </h3>
+                    
+                    <!-- Descripción -->
+                    <p class="text-gray-600 leading-relaxed">
+                        Se refiere a la facilidad con la que los usuarios pueden utilizar una interfaz 
+                        para sus objetivos. Una buena usabilidad significa que la aplicación es 
+                        intuitiva, eficiente y fácil de aprender. Incluye aspectos como la navegación 
+                        clara, mensajes de error comprensibles y tiempos de respuesta adecuados.
+                    </p>
+                </div>
+
+                <!-- 
+                ========================================
+                TARJETA 2: ACCESIBILIDAD
+                ========================================
+                Concepto: Diseño para todos los usuarios
+                -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <!-- Icono representativo -->
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">♿</span>
+                    </div>
+                    
+                    <!-- Título -->
+                    <h3 class="text-xl font-bold text-dark mb-4">
+                        Accesibilidad
+                    </h3>
+                    
+                    <!-- Descripción -->
+                    <p class="text-gray-600 leading-relaxed">
+                        Garantiza que todas las personas, incluyendo aquellas con discapacidades 
+                        visuales, auditivas, motoras o cognitivas, puedan utilizar la aplicación. 
+                        Esto incluye contraste de colores adecuado, texto alternativo en imágenes, 
+                        navegación por teclado y compatibilidad con lectores de pantalla.
+                    </p>
+                </div>
+
+                <!-- 
+                ========================================
+                TARJETA 3: EXPERIENCIA DE USUARIO (UX)
+                ========================================
+                Concepto: Satisfacción general del usuario
+                -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <!-- Icono representativo -->
+                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">💜</span>
+                    </div>
+                    
+                    <!-- Título -->
+                    <h3 class="text-xl font-bold text-dark mb-4">
+                        Experiencia de Usuario (UX)
+                    </h3>
+                    
+                    <!-- Descripción -->
+                    <p class="text-gray-600 leading-relaxed">
+                        La experiencia de usuario abarca todas las emociones, percepciones y 
+                        satisfacción del usuario al interactuar con la aplicación. Incluye 
+                        el diseño visual, la arquitectura de información, los flujos de usuario 
+                        y la sensación general que deja el producto. Un buen UX genera confianza 
+                        y fidelización.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- 
+            ========================================
+            PIE DE SECCIÓN
+            ========================================
+            Mensaje motivational para estudiantes
+            -->
+            <div class="mt-16 text-center">
+                <div class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-xl shadow-lg">
+                    <p class="text-lg font-medium">
+                        💡 "El buen diseño es tan poco diseño como sea posible" - Dieter Rams
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 
+    ========================================
+    FOOTER
+    ========================================
+    Pie de página con créditos
+    -->
+    <footer class="bg-dark text-white py-8 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <p class="text-gray-400">
+                © 2026 Diseño de Interfaces - Universidad Cooperativa de Colombia (UCC)
+            </p>
+            <p class="text-sm text-gray-500 mt-2">
+                Proyecto educativo desarrollado para la exposición académica
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
