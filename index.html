@@ -242,153 +242,153 @@
         </div>
     </section>
 
- <!-- 
-========================================
+<!-- ========================================
 SECCIÓN 3: HERRAMIENTAS MODERNAS
-========================================
-Sección ampliada con mejor diseño visual
-y más contenido educativo
--->
+======================================== -->
 
-<section class="py-24 px-6 bg-gradient-to-b from-white to-accent/30">
-    <div class="max-w-7xl mx-auto">
+<section class="py-20 px-4 bg-white">
+<div class="max-w-6xl mx-auto">
 
-        <!-- Encabezado -->
-        <div class="text-center mb-20">
+<!-- Título -->
+<div class="text-center mb-16">
 
-            <span class="inline-block bg-primary/20 text-primary px-5 py-2 rounded-full text-sm font-semibold mb-6">
-                🚀 Tecnologías actuales
-            </span>
+<span class="inline-block bg-primary/20 text-primary px-4 py-1 rounded-full text-sm font-medium mb-4">
+🛠️ Tecnología
+</span>
 
-            <h2 class="text-4xl md:text-5xl font-extrabold text-dark mb-6">
-                Herramientas modernas para el
-                <span class="text-primary">diseño de interfaces</span>
-            </h2>
+<h2 class="text-3xl md:text-5xl font-bold text-dark mb-6">
+Herramientas modernas
+</h2>
 
-            <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                El desarrollo de aplicaciones web modernas requiere el uso de herramientas
-                que permitan diseñar, prototipar y desarrollar interfaces eficientes.
-                Estas tecnologías ayudan a mejorar la productividad de los desarrolladores
-                y a crear experiencias de usuario más intuitivas.
-            </p>
+<p class="text-lg text-gray-600 max-w-3xl mx-auto">
+Haz clic en cada herramienta para conocer su función y su nivel de uso en el desarrollo web actual.
+</p>
 
-        </div>
+</div>
 
-        <!-- Tarjetas -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+<!-- Tarjetas -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
 
-            <!-- Tailwind -->
-            <div class="card-hover bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl">
+<!-- Tailwind -->
+<div onclick="toggleCard('tailwind')" class="cursor-pointer card-hover bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
 
-                <div class="text-5xl mb-6">🎨</div>
+<div class="text-4xl mb-4">🎨</div>
 
-                <h3 class="text-xl font-bold text-dark mb-4">
-                    Tailwind CSS
-                </h3>
+<h3 class="text-lg font-bold mb-3">Tailwind CSS</h3>
 
-                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Framework CSS basado en clases utilitarias que permite diseñar
-                    interfaces modernas directamente en el HTML, facilitando
-                    el desarrollo rápido de layouts responsivos.
-                </p>
+<!-- Barra de uso -->
+<div class="mb-3">
+<div class="flex justify-between text-sm mb-1">
+<span>Uso en proyectos modernos</span>
+<span class="font-bold">85%</span>
+</div>
 
-                <ul class="text-xs text-gray-500 space-y-1">
-                    <li>✔ Diseño rápido y flexible</li>
-                    <li>✔ Componentes reutilizables</li>
-                    <li>✔ Adaptación responsive</li>
-                </ul>
+<div class="w-full bg-gray-200 rounded-full h-2">
+<div class="bg-blue-500 h-2 rounded-full" style="width:85%"></div>
+</div>
+</div>
 
-            </div>
+<p id="tailwind" class="text-gray-600 text-sm hidden">
+Framework CSS basado en clases utilitarias que permite crear interfaces modernas
+rápidamente sin escribir mucho CSS personalizado.
+</p>
+
+</div>
 
 
-            <!-- Figma -->
-            <div class="card-hover bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl">
+<!-- Figma -->
+<div onclick="toggleCard('figma')" class="cursor-pointer card-hover bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
 
-                <div class="text-5xl mb-6">🖌️</div>
+<div class="text-4xl mb-4">🖌️</div>
 
-                <h3 class="text-xl font-bold text-dark mb-4">
-                    Figma
-                </h3>
+<h3 class="text-lg font-bold mb-3">Figma</h3>
 
-                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Plataforma de diseño colaborativo utilizada para crear
-                    wireframes, prototipos y diseños de interfaces antes de
-                    desarrollar el producto final.
-                </p>
+<div class="mb-3">
+<div class="flex justify-between text-sm mb-1">
+<span>Uso en diseño UI/UX</span>
+<span class="font-bold">90%</span>
+</div>
 
-                <ul class="text-xs text-gray-500 space-y-1">
-                    <li>✔ Diseño de prototipos</li>
-                    <li>✔ Trabajo colaborativo</li>
-                    <li>✔ Visualización de UX/UI</li>
-                </ul>
+<div class="w-full bg-gray-200 rounded-full h-2">
+<div class="bg-purple-500 h-2 rounded-full" style="width:90%"></div>
+</div>
+</div>
 
-            </div>
+<p id="figma" class="text-gray-600 text-sm hidden">
+Herramienta de diseño colaborativo utilizada para crear prototipos de interfaces
+antes de comenzar el desarrollo web.
+</p>
 
-
-            <!-- Git -->
-            <div class="card-hover bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl">
-
-                <div class="text-5xl mb-6">🔧</div>
-
-                <h3 class="text-xl font-bold text-dark mb-4">
-                    Git & GitHub
-                </h3>
-
-                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Sistema de control de versiones que permite gestionar cambios
-                    en el código y trabajar de forma colaborativa mediante ramas,
-                    commits y pull requests.
-                </p>
-
-                <ul class="text-xs text-gray-500 space-y-1">
-                    <li>✔ Control de versiones</li>
-                    <li>✔ Trabajo en equipo</li>
-                    <li>✔ Historial de cambios</li>
-                </ul>
-
-            </div>
+</div>
 
 
-            <!-- VS Code -->
-            <div class="card-hover bg-white rounded-2xl shadow-xl p-8 border border-gray-100 hover:shadow-2xl">
+<!-- Git -->
+<div onclick="toggleCard('git')" class="cursor-pointer card-hover bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
 
-                <div class="text-5xl mb-6">💻</div>
+<div class="text-4xl mb-4">🔧</div>
 
-                <h3 class="text-xl font-bold text-dark mb-4">
-                    Visual Studio Code
-                </h3>
+<h3 class="text-lg font-bold mb-3">Git & GitHub</h3>
 
-                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Editor de código altamente popular que ofrece soporte para
-                    múltiples lenguajes de programación, extensiones y herramientas
-                    que facilitan el desarrollo web moderno.
-                </p>
+<div class="mb-3">
+<div class="flex justify-between text-sm mb-1">
+<span>Uso en control de versiones</span>
+<span class="font-bold">95%</span>
+</div>
 
-                <ul class="text-xs text-gray-500 space-y-1">
-                    <li>✔ Extensiones integradas</li>
-                    <li>✔ Autocompletado inteligente</li>
-                    <li>✔ Integración con Git</li>
-                </ul>
+<div class="w-full bg-gray-200 rounded-full h-2">
+<div class="bg-green-500 h-2 rounded-full" style="width:95%"></div>
+</div>
+</div>
 
-            </div>
+<p id="git" class="text-gray-600 text-sm hidden">
+Sistema de control de versiones que permite registrar cambios en el código
+y trabajar en equipo mediante repositorios y pull requests.
+</p>
 
-        </div>
+</div>
 
 
-        <!-- Frase final -->
-        <div class="mt-20 text-center">
+<!-- VS Code -->
+<div onclick="toggleCard('vscode')" class="cursor-pointer card-hover bg-white rounded-2xl shadow-lg p-6 border border-gray-100">
 
-            <div class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-10 py-5 rounded-xl shadow-lg">
-                <p class="text-lg font-medium">
-                    ⚡ Las herramientas modernas permiten diseñar experiencias
-                    digitales más eficientes, accesibles e innovadoras.
-                </p>
-            </div>
+<div class="text-4xl mb-4">💻</div>
 
-        </div>
+<h3 class="text-lg font-bold mb-3">VS Code</h3>
 
-    </div>
+<div class="mb-3">
+<div class="flex justify-between text-sm mb-1">
+<span>Uso como editor de código</span>
+<span class="font-bold">92%</span>
+</div>
+
+<div class="w-full bg-gray-200 rounded-full h-2">
+<div class="bg-yellow-500 h-2 rounded-full" style="width:92%"></div>
+</div>
+</div>
+
+<p id="vscode" class="text-gray-600 text-sm hidden">
+Editor de código muy popular entre desarrolladores web por sus extensiones,
+autocompletado inteligente y soporte para múltiples lenguajes.
+</p>
+
+</div>
+
+</div>
+</div>
 </section>
+
+
+<script>
+
+function toggleCard(id){
+
+const element = document.getElementById(id);
+
+element.classList.toggle("hidden");
+
+}
+
+</script>
 
     <!-- SECCION 4: EJEMPLO PRACTICO Y CONCLUSION -->
     <section id="persona4-ejemplo-conclusion" class="py-20 px-4">
