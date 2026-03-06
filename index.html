@@ -1,27 +1,27 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- 
-    - Viewport para diseño responsive en dispositivos móviles
-    - Título de la página
+    <!--
+    - Viewport para diseño responsive en dispositivos moviles
+    - Titulo de la pagina
     -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseño de Interfaces para Aplicaciones Web - UCC</title>
+    <title>Dise&ntilde;o de Interfaces para Aplicaciones Web - UCC</title>
     <!-- Tailwind CSS CDN - Framework de estilos utilitarios -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Configuración personalizada de Tailwind -->
+    <!-- Configuracion personalizada de Tailwind -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
                         // Paleta de colores personalizada para el proyecto
-                        primary: '#4F46E5',      // Indigo principal
-                        secondary: '#818CF8',    // Indigo claro
-                        accent: '#C7D2FE',       // Azul muy claro
-                        dark: '#1E1B4B',          // Azul oscuro para textos
-                        light: '#FAF5E9',         // Fondo muy claro
+                        primary: '#4F46E5',
+                        secondary: '#818CF8',
+                        accent: '#C7D2FE',
+                        dark: '#1E1B4B',
+                        light: '#FAF5E9',
                     },
                     fontFamily: {
                         // Fuente sans-serif limpia y moderna
@@ -34,11 +34,9 @@
     <!-- Fuente Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        /* Estilos adicionales personalizados */
         body {
             font-family: 'Inter', system-ui, sans-serif;
         }
-        /* Animación suave para elementos interactivos */
         .card-hover {
             transition: all 0.3s ease;
         }
@@ -47,61 +45,32 @@
         }
     </style>
 </head>
-<!-- 
-=========================================
-CUERPO PRINCIPAL
-=========================================
-- Fondo con gradiente suave
-- Color de texto oscuro para buena lectura
--->
 <body class="bg-gradient-to-br from-light via-white to-accent min-h-screen text-dark">
-    
-    <!-- 
-    ========================================
-    SECCIÓN 1: PORTADA
-    ========================================
-    Esta sección contiene:
-    - Título principal del proyecto
-    - Nombres de los estudiantes
-    - Información académica (materia, universidad, año)
-    - Diseño centrado y moderno con colores suaves
-    -->
+
+    <!-- SECCION 1: PORTADA -->
     <section class="min-h-screen flex flex-col items-center justify-center px-4 py-12">
-        <!-- Contenedor principal de la portada -->
         <div class="max-w-4xl w-full text-center space-y-8">
-            
-            <!-- Título principal -->
-            <!-- Tamaño grande para impactar visualmente -->
             <h1 class="text-4xl md:text-6xl font-extrabold text-dark leading-tight">
-                Diseño de Interfaces para 
+                Dise&ntilde;o de Interfaces para
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                     Aplicaciones Web
                 </span>
             </h1>
-            
-            <!-- Subtítulo informativo -->
+
             <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-                Explorando los fundamentos del diseño UI/UX para crear experiencias digitales memorables
+                Explorando los fundamentos del dise&ntilde;o UI/UX para crear experiencias digitales memorables
             </p>
-            
-            <!-- Línea decorativa -->
+
             <div class="flex items-center justify-center gap-4">
                 <div class="h-1 w-16 bg-primary rounded"></div>
                 <div class="h-3 w-3 bg-primary rounded-full"></div>
                 <div class="h-1 w-16 bg-primary rounded"></div>
             </div>
-            
-            <!-- 
-            ========================================
-            INFORMACIÓN ACADÉMICA
-            ========================================
-            Tarjeta con los datos de los estudiantes y la materia
-            -->
+
             <div class="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl p-8 max-w-2xl mx-auto mt-8">
-                
                 <div class="mb-6">
                     <h2 class="text-sm uppercase tracking-wider text-gray-500 font-semibold mb-3">
-                        👥 Integrantes del Proyecto
+                        Integrantes del Proyecto
                     </h2>
                     <div class="flex flex-wrap justify-center gap-3 text-gray-700">
                         <span class="bg-accent/50 px-4 py-2 rounded-lg font-medium">Juliana Rodriguez</span>
@@ -110,194 +79,364 @@ CUERPO PRINCIPAL
                         <span class="bg-accent/50 px-4 py-2 rounded-lg font-medium">Diery Valencia</span>
                     </div>
                 </div>
-                
-                <!-- Información de la materia -->
+
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6 border-t border-gray-200">
-                    <!-- Materia -->
                     <div class="text-center">
                         <p class="text-xs uppercase tracking-wider text-gray-500 mb-1">Materia</p>
-                        <p class="font-semibold text-dark">Diseño de interfaces</p>
+                        <p class="font-semibold text-dark">Dise&ntilde;o de interfaces</p>
                     </div>
-                    <!-- Universidad -->
                     <div class="text-center">
                         <p class="text-xs uppercase tracking-wider text-gray-500 mb-1">Universidad</p>
                         <p class="font-semibold text-dark">UCC</p>
                     </div>
-                    <!-- Año -->
                     <div class="text-center">
-                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-1">Año</p>
+                        <p class="text-xs uppercase tracking-wider text-gray-500 mb-1">A&ntilde;o</p>
                         <p class="font-semibold text-dark">2026</p>
                     </div>
                 </div>
             </div>
-            
-            <!-- Indicador visual para ir a la siguiente sección -->
+
             <div class="mt-12 animate-bounce">
-                <span class="text-3xl">👇</span>
+                <span class="text-3xl">&darr;</span>
             </div>
-            
         </div>
     </section>
 
-    <!-- 
-    ========================================
-    SECCIÓN 2: ¿Qué es el diseño de interfaces?
-    ========================================
-    
-    -->
-
+    <!-- SECCION 2: QUE ES EL DISENO DE INTERFACES -->
     <section class="min-h-screen py-20 px-4 bg-white/50">
         <div class="max-w-6xl mx-auto">
-            
-            <!-- Encabezado de la sección -->
             <div class="text-center mb-16">
-                <!-- Badge decorativo -->
                 <span class="inline-block bg-secondary/20 text-primary px-4 py-1 rounded-full text-sm font-medium mb-4">
-                    📚 Fundamentos
+                    Fundamentos
                 </span>
-                
-                <!-- Título principal de la sección -->
+
                 <h2 class="text-3xl md:text-5xl font-bold text-dark mb-6">
-                    ¿Qué es el diseño de interfaces?
+                    &iquest;Qu&eacute; es el dise&ntilde;o de interfaces?
                 </h2>
-                
-                <!-- Párrafo explicativo -->
-                <!-- Explica de forma clara y concisa el concepto -->
+
                 <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                    El <strong>diseño de interfaces</strong> es la disciplina que se encarga de crear 
-                    la parte visual y interactiva de las aplicaciones web. Combina principios de 
-                    <strong>diseño gráfico</strong>, <strong>psicología</strong> y <strong>tecnología</strong> 
-                    para lograr que los usuarios puedan interactuar con los sistemas digitales de manera 
-                    intuitiva, eficiente y agradable. Un buen diseño de interfaces no solo se ve bien, 
-                    sino que también facilita la vida del usuario.
+                    El <strong>dise&ntilde;o de interfaces</strong> es la disciplina que define la capa visual e interactiva
+                    de una aplicaci&oacute;n. Integra principios de <strong>dise&ntilde;o gr&aacute;fico</strong>,
+                    <strong>psicolog&iacute;a cognitiva</strong> y <strong>tecnolog&iacute;a</strong> para que los usuarios
+                    ejecuten tareas de forma intuitiva, eficiente y consistente.
                 </p>
             </div>
 
-            <!-- 
-            ========================================
-            TARJETAS DE CONCEPTOS CLAVE
-            ========================================
-            Grid layout responsive:
-            - 1 columna en móvil
-            - 3 columnas en pantallas medianas y grandes
-            Cada tarjeta contiene:
-            - Icono/emoji representativo
-            - Título del concepto
-            - Descripción breve
-            -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- 
-                ========================================
-                TARJETA 1: USABILIDAD
-                ========================================
-                Concepto: Facilidad de uso de la interfaz
-                -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-                    <!-- Icono representativo -->
-                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
-                        <span class="text-3xl">🎯</span>
-                    </div>
-                    
-                    <!-- Título -->
-                    <h3 class="text-xl font-bold text-dark mb-4">
-                        Usabilidad
-                    </h3>
-                    
-                    <!-- Descripción -->
+                    <h3 class="text-xl font-bold text-dark mb-4">Usabilidad</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Se refiere a la facilidad con la que los usuarios pueden utilizar una interfaz 
-                        para sus objetivos. Una buena usabilidad significa que la aplicación es 
-                        intuitiva, eficiente y fácil de aprender. Incluye aspectos como la navegación 
-                        clara, mensajes de error comprensibles y tiempos de respuesta adecuados.
+                        Eval&uacute;a qu&eacute; tan f&aacute;cil es usar la interfaz para cumplir objetivos con m&iacute;nimo esfuerzo.
+                        Considera claridad de navegaci&oacute;n, retroalimentaci&oacute;n y prevenci&oacute;n de errores.
                     </p>
                 </div>
 
-                <!-- 
-                ========================================
-                TARJETA 2: ACCESIBILIDAD
-                ========================================
-                Concepto: Diseño para todos los usuarios
-                -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-                    <!-- Icono representativo -->
-                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                        <span class="text-3xl">♿</span>
-                    </div>
-                    
-                    <!-- Título -->
-                    <h3 class="text-xl font-bold text-dark mb-4">
-                        Accesibilidad
-                    </h3>
-                    
-                    <!-- Descripción -->
+                    <h3 class="text-xl font-bold text-dark mb-4">Accesibilidad</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        Garantiza que todas las personas, incluyendo aquellas con discapacidades 
-                        visuales, auditivas, motoras o cognitivas, puedan utilizar la aplicación. 
-                        Esto incluye contraste de colores adecuado, texto alternativo en imágenes, 
-                        navegación por teclado y compatibilidad con lectores de pantalla.
+                        Garantiza que personas con distintas capacidades puedan usar la aplicaci&oacute;n.
+                        Incluye contraste adecuado, navegaci&oacute;n por teclado, etiquetas sem&aacute;nticas y texto alternativo.
                     </p>
                 </div>
 
-                <!-- 
-                ========================================
-                TARJETA 3: EXPERIENCIA DE USUARIO (UX)
-                ========================================
-                Concepto: Satisfacción general del usuario
-                -->
                 <div class="card-hover bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-                    <!-- Icono representativo -->
-                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-6">
-                        <span class="text-3xl">💜</span>
-                    </div>
-                    
-                    <!-- Título -->
-                    <h3 class="text-xl font-bold text-dark mb-4">
-                        Experiencia de Usuario (UX)
-                    </h3>
-                    
-                    <!-- Descripción -->
+                    <h3 class="text-xl font-bold text-dark mb-4">Experiencia de Usuario (UX)</h3>
                     <p class="text-gray-600 leading-relaxed">
-                        La experiencia de usuario abarca todas las emociones, percepciones y 
-                        satisfacción del usuario al interactuar con la aplicación. Incluye 
-                        el diseño visual, la arquitectura de información, los flujos de usuario 
-                        y la sensación general que deja el producto. Un buen UX genera confianza 
-                        y fidelización.
+                        Mide la calidad integral de la interacci&oacute;n: percepci&oacute;n, satisfacci&oacute;n y confianza.
+                        Un buen UX mejora la adopci&oacute;n, la retenci&oacute;n y el valor del producto.
                     </p>
                 </div>
-
             </div>
 
-            <!-- 
-            ========================================
-            PIE DE SECCIÓN
-            ========================================
-            Mensaje motivational para estudiantes
-            -->
             <div class="mt-16 text-center">
                 <div class="inline-block bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-xl shadow-lg">
                     <p class="text-lg font-medium">
-                        💡 "El buen diseño es tan poco diseño como sea posible" - Dieter Rams
+                        "El buen dise&ntilde;o es tan poco dise&ntilde;o como sea posible" - Dieter Rams
                     </p>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- 
-    ========================================
-    FOOTER
-    ========================================
-    Pie de página con créditos
-    -->
+    <!-- SECCION: PRINCIPIOS DEL DISENO DE INTERFACES -->
+    <section class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="relative overflow-hidden rounded-3xl border border-white/70 bg-gradient-to-br from-white via-white to-accent/40 shadow-2xl p-8 md:p-12">
+                <div class="absolute -top-16 -right-12 h-48 w-48 rounded-full bg-secondary/20 blur-3xl"></div>
+                <div class="absolute -bottom-16 -left-12 h-56 w-56 rounded-full bg-primary/15 blur-3xl"></div>
+
+                <div class="relative text-center mb-12">
+                    <h2 class="text-4xl md:text-6xl font-extrabold text-dark leading-tight tracking-tight">
+                        Principios del Dise&ntilde;o de Interfaces
+                    </h2>
+                    <p class="mt-5 text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed">
+                        Un enfoque t&eacute;cnico de interfaz prioriza estructura, consistencia y respuesta del sistema
+                        para optimizar la eficiencia operativa y la experiencia de uso.
+                    </p>
+                </div>
+
+                <div class="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <article class="group bg-white/95 rounded-2xl border border-gray-100 shadow-lg p-6 transition duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="mb-4 w-12 h-12 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <path d="M9 12l2 2 4-4"></path>
+                                <circle cx="12" cy="12" r="9"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Usabilidad</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Reduce carga cognitiva con flujos previsibles, patrones consistentes y objetivos claramente visibles.
+                        </p>
+                    </article>
+
+                    <article class="group bg-white/95 rounded-2xl border border-gray-100 shadow-lg p-6 transition duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="mb-4 w-12 h-12 rounded-xl bg-sky-100 text-sky-700 flex items-center justify-center">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <circle cx="12" cy="8" r="4"></circle>
+                                <path d="M4 20c1.8-3.3 4.6-5 8-5s6.2 1.7 8 5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Experiencia de Usuario</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Integra rendimiento, claridad de estados y feedback continuo para maximizar satisfacci&oacute;n y confianza.
+                        </p>
+                    </article>
+
+                    <article class="group bg-white/95 rounded-2xl border border-gray-100 shadow-lg p-6 transition duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="mb-4 w-12 h-12 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <rect x="3" y="4" width="18" height="4" rx="1.5"></rect>
+                                <rect x="3" y="10" width="11" height="4" rx="1.5"></rect>
+                                <rect x="3" y="16" width="15" height="4" rx="1.5"></rect>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Elementos Visuales</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Tipograf&iacute;a, contraste y jerarqu&iacute;a visual organizan la informaci&oacute;n y aceleran la comprensi&oacute;n.
+                        </p>
+                    </article>
+
+                    <article class="group bg-white/95 rounded-2xl border border-gray-100 shadow-lg p-6 transition duration-300 hover:scale-105 hover:shadow-xl">
+                        <div class="mb-4 w-12 h-12 rounded-xl bg-violet-100 text-violet-700 flex items-center justify-center">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                                <path d="M7 17l10-10"></path>
+                                <path d="M9 7h8v8"></path>
+                                <rect x="4" y="4" width="16" height="16" rx="3"></rect>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark mb-3">Interacci&oacute;n</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Cada acci&oacute;n del usuario debe producir una respuesta observable, inmediata y coherente del sistema.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION 4: EJEMPLO PRACTICO Y CONCLUSION -->
+    <section id="persona4-ejemplo-conclusion" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto space-y-10">
+            <div class="text-center">
+                <span class="inline-flex items-center px-4 py-1 rounded-full text-sm font-semibold bg-primary/10 text-primary">
+                    Punto 4 · Ejemplo Pr&aacute;ctico
+                </span>
+                <h2 class="mt-4 text-3xl md:text-5xl font-extrabold text-dark leading-tight">
+                    Dise&ntilde;o de interfaz aplicado a una app educativa
+                </h2>
+                <p class="mt-4 text-gray-600 text-lg max-w-3xl mx-auto">
+                    Este ejemplo simula un panel de aprendizaje con estructura clara, jerarqu&iacute;a visual y acciones destacadas.
+                    El objetivo es que el usuario comprenda el estado de su progreso y tome decisiones r&aacute;pidas sin fricci&oacute;n.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                <article class="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-gray-100 p-6 md:p-8 transition duration-300 hover:-translate-y-1 hover:shadow-2xl">
+                    <div class="flex items-center justify-between mb-6">
+                        <div>
+                            <p class="text-xs uppercase tracking-wider text-gray-500">Dashboard Educativo</p>
+                            <h3 class="text-2xl font-bold text-dark">Mi Ruta de Aprendizaje</h3>
+                        </div>
+                        <span id="app-status-badge" class="inline-flex items-center px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-sm font-semibold animate-pulse">
+                            Activo
+                        </span>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="rounded-xl bg-accent/40 p-4">
+                            <p class="text-xs text-gray-500 uppercase tracking-wider">Progreso General</p>
+                            <p id="progress-text" class="text-2xl font-extrabold text-dark mt-1">78%</p>
+                            <div class="mt-3 h-2 w-full bg-white rounded-full overflow-hidden">
+                                <div id="progress-bar" class="h-full bg-primary rounded-full transition-all duration-500" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="rounded-xl bg-accent/40 p-4">
+                            <p class="text-xs text-gray-500 uppercase tracking-wider">M&oacute;dulos Completados</p>
+                            <p id="module-counter" class="text-2xl font-extrabold text-dark mt-1">14/18</p>
+                            <p class="text-sm text-gray-600 mt-2">Objetivo semanal: 3 m&oacute;dulos</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div id="module-forms-card" class="rounded-xl border border-gray-100 p-4 flex items-center justify-between transition duration-300">
+                            <div>
+                                <p class="font-semibold text-dark">Dise&ntilde;o de Formularios</p>
+                                <p class="text-sm text-gray-500">Clase interactiva · 24 min</p>
+                            </div>
+                            <button id="continue-btn" class="px-4 py-2 rounded-lg bg-primary text-white font-medium hover:bg-dark transition">Continuar</button>
+                        </div>
+                        <div id="module-a11y-card" class="rounded-xl border border-gray-100 p-4 flex items-center justify-between transition duration-300">
+                            <div>
+                                <p class="font-semibold text-dark">Accesibilidad en UI</p>
+                                <p class="text-sm text-gray-500">Laboratorio · 18 min</p>
+                            </div>
+                            <button id="detail-btn" class="px-4 py-2 rounded-lg bg-white border border-gray-200 text-dark font-medium hover:bg-gray-50 transition">Ver detalle</button>
+                        </div>
+                    </div>
+                    <p id="interaction-message" class="mt-4 text-sm text-gray-600 font-medium">
+                        Estado: selecciona una acci&oacute;n para simular interacci&oacute;n.
+                    </p>
+                </article>
+
+                <article class="bg-white/70 rounded-3xl border border-gray-100 shadow-xl p-6 md:p-8">
+                    <h3 class="text-2xl font-bold text-dark mb-5">Por qu&eacute; este dise&ntilde;o funciona</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <button type="button" data-focus="forms" class="focus-card text-left rounded-xl p-4 bg-emerald-50 border border-emerald-100 transition hover:scale-[1.02]">
+                            <p class="text-sm font-semibold text-emerald-700">Jerarqu&iacute;a visual</p>
+                            <p class="text-gray-600 mt-2">Los datos cr&iacute;ticos aparecen primero: progreso, metas y pr&oacute;xima acci&oacute;n.</p>
+                        </button>
+                        <button type="button" data-focus="actions" class="focus-card text-left rounded-xl p-4 bg-sky-50 border border-sky-100 transition hover:scale-[1.02]">
+                            <p class="text-sm font-semibold text-sky-700">Acciones claras</p>
+                            <p class="text-gray-600 mt-2">Botones primarios y secundarios diferencian continuar vs. explorar.</p>
+                        </button>
+                        <button type="button" data-focus="consistency" class="focus-card text-left rounded-xl p-4 bg-amber-50 border border-amber-100 transition hover:scale-[1.02]">
+                            <p class="text-sm font-semibold text-amber-700">Consistencia de UI</p>
+                            <p class="text-gray-600 mt-2">Espaciado, tipograf&iacute;a y componentes repetibles mejoran aprendizaje visual.</p>
+                        </button>
+                        <button type="button" data-focus="ux" class="focus-card text-left rounded-xl p-4 bg-violet-50 border border-violet-100 transition hover:scale-[1.02]">
+                            <p class="text-sm font-semibold text-violet-700">Mejor experiencia UX</p>
+                            <p class="text-gray-600 mt-2">Reduce esfuerzo cognitivo y acelera la toma de decisiones del usuario.</p>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="relative overflow-hidden rounded-3xl bg-gradient-to-r from-dark to-primary text-white p-8 md:p-10 shadow-2xl">
+                <div class="absolute -top-10 -right-6 h-28 w-28 rounded-full bg-white/10 blur-2xl animate-pulse"></div>
+                <h3 class="text-2xl md:text-3xl font-extrabold">Conclusi&oacute;n</h3>
+                <p class="mt-4 text-white/90 max-w-4xl">
+                    El dise&ntilde;o de interfaces es clave en aplicaciones modernas porque convierte funciones complejas en
+                    experiencias simples, comprensibles y eficientes. Una interfaz bien dise&ntilde;ada mejora la usabilidad,
+                    fortalece la experiencia de usuario y aumenta la probabilidad de adopci&oacute;n y &eacute;xito del producto.
+                </p>
+                <p id="conclusion-highlight" class="mt-4 text-sm text-white/85 font-medium">
+                    Punto clave activo: Importancia.
+                </p>
+                <div class="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <button type="button" data-conclusion="Importancia: transforma tecnolog&iacute;a en interacci&oacute;n clara y accionable." class="conclusion-card text-left rounded-xl bg-white/10 border border-white/20 p-4 transition duration-300 hover:-translate-y-1 hover:bg-white/20">
+                        <p class="font-semibold">Importancia</p>
+                        <p class="text-sm text-white/85 mt-1">Transforma tecnolog&iacute;a en interacci&oacute;n clara.</p>
+                    </button>
+                    <button type="button" data-conclusion="Impacto UX: mejora satisfacci&oacute;n, confianza y retenci&oacute;n del usuario." class="conclusion-card text-left rounded-xl bg-white/10 border border-white/20 p-4 transition duration-300 hover:-translate-y-1 hover:bg-white/20">
+                        <p class="font-semibold">Impacto UX</p>
+                        <p class="text-sm text-white/85 mt-1">Incrementa satisfacci&oacute;n, confianza y retenci&oacute;n.</p>
+                    </button>
+                    <button type="button" data-conclusion="&Eacute;xito de la app: eleva conversi&oacute;n, uso continuo y valor percibido." class="conclusion-card text-left rounded-xl bg-white/10 border border-white/20 p-4 transition duration-300 hover:-translate-y-1 hover:bg-white/20">
+                        <p class="font-semibold">&Eacute;xito de la app</p>
+                        <p class="text-sm text-white/85 mt-1">Mejora conversi&oacute;n, uso continuo y valor percibido.</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        (function () {
+            const continueBtn = document.getElementById('continue-btn');
+            const detailBtn = document.getElementById('detail-btn');
+            const progressText = document.getElementById('progress-text');
+            const progressBar = document.getElementById('progress-bar');
+            const moduleCounter = document.getElementById('module-counter');
+            const message = document.getElementById('interaction-message');
+            const statusBadge = document.getElementById('app-status-badge');
+            const formsCard = document.getElementById('module-forms-card');
+            const a11yCard = document.getElementById('module-a11y-card');
+            const focusCards = document.querySelectorAll('.focus-card');
+            const conclusionCards = document.querySelectorAll('.conclusion-card');
+            const conclusionHighlight = document.getElementById('conclusion-highlight');
+
+            let progress = 78;
+            let completed = 14;
+
+            function renderProgress() {
+                progressText.textContent = progress + '%';
+                progressBar.style.width = progress + '%';
+                moduleCounter.textContent = completed + '/18';
+            }
+
+            function clearModuleHighlight() {
+                formsCard.classList.remove('ring-2', 'ring-primary/40', 'bg-primary/5');
+                a11yCard.classList.remove('ring-2', 'ring-primary/40', 'bg-primary/5');
+            }
+
+            function setStatus(text, active) {
+                message.textContent = text;
+                statusBadge.textContent = active ? 'Activo' : 'En revisi\u00f3n';
+                statusBadge.classList.toggle('bg-emerald-100', active);
+                statusBadge.classList.toggle('text-emerald-700', active);
+                statusBadge.classList.toggle('bg-amber-100', !active);
+                statusBadge.classList.toggle('text-amber-700', !active);
+            }
+
+            continueBtn.addEventListener('click', function () {
+                progress = Math.min(100, progress + 7);
+                completed = Math.min(18, completed + 1);
+                clearModuleHighlight();
+                formsCard.classList.add('ring-2', 'ring-primary/40', 'bg-primary/5');
+                renderProgress();
+                setStatus('Acci\u00f3n aplicada: el m\u00f3dulo \"Dise\u00f1o de Formularios\" avanz\u00f3 correctamente.', true);
+            });
+
+            detailBtn.addEventListener('click', function () {
+                clearModuleHighlight();
+                a11yCard.classList.add('ring-2', 'ring-primary/40', 'bg-primary/5');
+                setStatus('Vista de detalle abierta: se muestran criterios de accesibilidad para optimizar UX.', false);
+            });
+
+            focusCards.forEach(function (card) {
+                card.addEventListener('click', function () {
+                    focusCards.forEach(function (item) {
+                        item.classList.remove('ring-2', 'ring-primary/40', 'shadow-md');
+                    });
+                    card.classList.add('ring-2', 'ring-primary/40', 'shadow-md');
+                });
+            });
+
+            conclusionCards.forEach(function (card, index) {
+                card.addEventListener('click', function () {
+                    conclusionCards.forEach(function (item) {
+                        item.classList.remove('ring-2', 'ring-white/60', 'bg-white/25', 'shadow-lg');
+                    });
+                    card.classList.add('ring-2', 'ring-white/60', 'bg-white/25', 'shadow-lg');
+                    conclusionHighlight.innerHTML = 'Punto clave activo: ' + card.getAttribute('data-conclusion');
+                });
+                if (index === 0) {
+                    card.classList.add('ring-2', 'ring-white/60', 'bg-white/25', 'shadow-lg');
+                }
+            });
+
+            renderProgress();
+        })();
+    </script>
+
+    <!-- FOOTER -->
     <footer class="bg-dark text-white py-8 text-center">
         <div class="max-w-4xl mx-auto px-4">
             <p class="text-gray-400">
-                © 2026 Diseño de Interfaces - Universidad Cooperativa de Colombia (UCC)
+                &copy; 2026 Dise&ntilde;o de Interfaces - Universidad Cooperativa de Colombia (UCC)
             </p>
             <p class="text-sm text-gray-500 mt-2">
-                Proyecto educativo desarrollado para la exposición académica
+                Proyecto educativo 
             </p>
         </div>
     </footer>
