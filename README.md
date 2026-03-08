@@ -73,12 +73,12 @@ El proyecto cuenta con un diseño completamente responsive que se adapta a:
 ## 🔗 Enlace del Proyecto
 
 ```
-"https://tu-url-de-despliegue-aqui.com"
+" "
 ```
 
 ## 📄 Licencia
 
-Proyecto educativo - Universidad Cooperativa de Colombia
+Proyecto educativo - UCC 
 
 ---
 
